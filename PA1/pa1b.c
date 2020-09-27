@@ -9,8 +9,10 @@ void mat_mult(int *local_a, int *local_y, int *x, int loc_rows, int cols)
     local_y[i] = 0;
     for (int j = 0; j < cols; ++j)
     {
+      printf("local_y[%d] = %d + %d * %d\n", i, local_y[i], local_a[i * cols + j], x[j]);
       local_y[i] += local_a[i * cols + j] * x[j];
     }
+    printf("local_y[%d] = %d\n", i, local_y[i]);
   }
 }
 
@@ -38,40 +40,43 @@ int main()
     for (int i = 0; i < cols; ++i)
       fscanf(file, "%d", &x[i]);
 
-    printf("Process %d allocating memory\n", rank);
-    for (int i = 0; i < size; ++i)
-    {
-      MPI_Send(&rows, 1, MPI_INT, i, i, MPI_COMM_WORLD);
-      MPI_Send(&cols, 1, MPI_INT, i, i, MPI_COMM_WORLD);
-      MPI_Send(x, cols, MPI_INT, i, i, MPI_COMM_WORLD);
-    }
+    MPI_Bcast(&rows, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast(&cols, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast(x, cols, MPI_INT, 0, MPI_COMM_WORLD);
   }
 
   if (rank != 0)
   {
-    MPI_Recv(&rows, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-    MPI_Recv(&cols, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+    MPI_Bcast(&rows, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast(&cols, 1, MPI_INT, 0, MPI_COMM_WORLD);
     x = malloc(sizeof(int) * cols);
-    MPI_Recv(x, cols, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+    MPI_Bcast(x, cols, MPI_INT, 0, MPI_COMM_WORLD);
   }
 
   local_a = malloc(sizeof(int) * cols);
   local_y = malloc(sizeof(int) * rows / size);
   MPI_Scatter(a, cols, MPI_INT, local_a, cols, MPI_INT, 0, MPI_COMM_WORLD);
 
+  printf("\nCalculating Process %d's Y value(s)\n", rank);
   mat_mult(local_a, local_y, x, rows / size, cols);
-
+  MPI_Barrier(MPI_COMM_WORLD);
   y = malloc(sizeof(int) * rows);
-  MPI_Gather(local_y, rows / cols, MPI_INT, y, rows / cols, MPI_INT, 0, MPI_COMM_WORLD);
+  MPI_Gather(local_y, rows / size, MPI_INT, y, rows / size, MPI_INT, 0, MPI_COMM_WORLD);
 
   if (rank == 0)
   {
+    printf("\nResult:\n");
     printf("[ ");
     for (int i = 0; i < size; ++i)
       printf("%d ", y[i]);
     printf("]\n");
+    free(a);
+    free(y);
   }
-
+  free(x);
+  free(local_a);
+  free(local_y);
+  MPI_Gather(NULL, 0, MPI_BYTE, NULL, 0, MPI_BYTE, 0, MPI_COMM_WORLD);
   MPI_Finalize();
   return 0;
 }
