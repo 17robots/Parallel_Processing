@@ -1,4 +1,7 @@
 #include <pthread.h>
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 // we need to go for each number of threads 1, 2, 4, 8 and then we need to go from threads 1000, 2000, 4000, 8000, 16000
 
@@ -8,10 +11,22 @@ void *calculateFactorial(int numElems, int startIndex, int *numArr)
 
 int factorial(int n)
 {
+  int result = 1;
+  for (int i = 2; i <= n; result *= i, ++i)
+  {
+  }
+  return result;
 }
 
 int *generateArray(int low, int high, int nums)
 {
+  int *returnedArr;
+  srand(time(NULL));
+  for (int i = 0; i < nums; ++i)
+  {
+    returnedArr[i] = rand() % high + low;
+  }
+  return returnedArr;
 }
 
 int main()
