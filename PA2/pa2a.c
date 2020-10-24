@@ -6,6 +6,14 @@ void *calculateFactorial(int numElems, int startIndex, int *numArr)
 {
 }
 
+int factorial(int n)
+{
+}
+
+int *generateArray(int low, int high, int nums)
+{
+}
+
 int main()
 {
   int for (int threadCount = 1; threadCount < 8; threadCount *= 2)
@@ -16,6 +24,7 @@ int main()
 
     for (int arrLength = 1000; arrLength < 16001; arrLength *= 2)
     {
+      int *randArr =
     }
 
     // clear attributes
