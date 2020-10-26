@@ -22,13 +22,11 @@ int *genArray(int num_nums, int low, int high)
 
 int factorial(int num)
 {
-  // int result = 1;
-  // for (int i = 2; i <= num; result *= i, ++i)
-  // {
-  // }
-  // return result;
-
-  return num * 2;
+  int result = 1;
+  for (int i = 2; i <= num; result *= i, ++i)
+  {
+  }
+  return result;
 }
 
 void *doFactCalcOps(void *args)
@@ -46,6 +44,9 @@ int main()
 {
   double totalTime, singleThreadTime, speedup, efficiency;
   struct timespec begin, end;
+  FILE *fp;
+  fp = fopen("performance.txt", "w");
+
   srand(time(NULL));
   int low, high;
   printf("Enter Upper Bound\n");
@@ -59,15 +60,15 @@ int main()
   for (int arrLength = 1000; arrLength < 16001; arrLength *= 2)
   {
     singleThreadTime = 0;
-    printf("\nArray Length: %d\n", arrLength);
+    fprintf(fp, "\nArray Length: %d\n", arrLength);
     args.arr = genArray(arrLength, low, high);
     for (int threadCount = 1; threadCount < 17; threadCount *= 2)
     {
       totalTime = 0;
-      printf("Thread Count: %d; ", threadCount);
+      fprintf(fp, "Thread Count: %d; ", threadCount);
       pthread_t threads[threadCount];
       args.elems = arrLength / threadCount;
-      printf("Each thread will process %d element(s)\n", args.elems);
+      fprintf(fp, "Each thread will process %d element(s)\n", args.elems);
       for (int i = 0; i < threadCount; ++i)
       {
         args.start = args.elems * i;
@@ -80,11 +81,11 @@ int main()
       if (threadCount == 1)
         singleThreadTime += totalTime;
 
-      printf("Total Time Taken For %d thread(s): %f\n", threadCount, totalTime);
+      fprintf(fp, "Total Time Taken For %d thread(s): %f\n", threadCount, totalTime);
       speedup = singleThreadTime / totalTime;
-      printf("Speedup from 1 to %d thread(s): %f / %f = %f\n", threadCount, singleThreadTime, totalTime, speedup);
+      fprintf(fp, "Speedup from 1 to %d thread(s): %f / %f = %f\n", threadCount, singleThreadTime, totalTime, speedup);
       efficiency = speedup / threadCount;
-      printf("Efficiency from 1 to %d thread(s): %f / %d = %f\n\n", threadCount, speedup, threadCount, efficiency);
+      fprintf(fp, "Efficiency from 1 to %d thread(s): %f / %d = %f\n\n", threadCount, speedup, threadCount, efficiency);
       for (int i = 0; i < threadCount; ++i)
       {
         pthread_join(threads[i], NULL);
@@ -92,6 +93,7 @@ int main()
     }
   }
   printf("\n");
+  fclose(fp);
   pthread_exit(NULL);
   return 0;
 }
