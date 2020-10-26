@@ -1,56 +1,97 @@
 #include <pthread.h>
-#include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
-// we need to go for each number of threads 1, 2, 4, 8 and then we need to go from threads 1000, 2000, 4000, 8000, 16000
-
-void *calculateFactorial(int numElems, int startIndex, int *numArr)
+struct arg_struct
 {
+  int *arr;
+  int start;
+  int elems;
+};
+
+int *genArray(int num_nums, int low, int high)
+{
+  int *placedArray = malloc(sizeof(int) * num_nums);
+  for (int i = 0; i < num_nums; ++i)
+  {
+    placedArray[i] = rand() % high + low;
+  }
+  return placedArray;
 }
 
-int factorial(int n)
+int factorial(int num)
 {
-  int result = 1;
-  for (int i = 2; i <= n; result *= i, ++i)
-  {
-  }
-  return result;
+  // int result = 1;
+  // for (int i = 2; i <= num; result *= i, ++i)
+  // {
+  // }
+  // return result;
+
+  return num * 2;
 }
 
-int *generateArray(int low, int high, int nums)
+void *doFactCalcOps(void *args)
 {
-  int *returnedArr;
-  srand(time(NULL));
-  for (int i = 0; i < nums; ++i)
+  struct arg_struct *arguments = args;
+  for (int i = 0; i < arguments->elems; ++i)
   {
-    returnedArr[i] = rand() % high + low;
+    arguments->arr[arguments->start + i] = factorial(arguments->arr[arguments->start + i]);
   }
-  return returnedArr;
+  pthread_exit(NULL);
+  return (NULL);
 }
 
 int main()
 {
-  int for (int threadCount = 1; threadCount < 8; threadCount *= 2)
+  double totalTime, singleThreadTime, speedup, efficiency;
+  struct timespec begin, end;
+  srand(time(NULL));
+  int low, high;
+  printf("Enter Upper Bound\n");
+  scanf("%d", &high);
+
+  printf("Enter Lower Bound\n");
+  scanf("%d", &low);
+
+  struct arg_struct args;
+
+  for (int arrLength = 1000; arrLength < 16001; arrLength *= 2)
   {
-    // set up the threads
-    pthread_t threads[threadCount];
-    pthread_attr_t attr;
-
-    for (int arrLength = 1000; arrLength < 16001; arrLength *= 2)
+    singleThreadTime = 0;
+    printf("\nArray Length: %d\n", arrLength);
+    args.arr = genArray(arrLength, low, high);
+    for (int threadCount = 1; threadCount < 17; threadCount *= 2)
     {
-      int *randArr =
-    }
+      totalTime = 0;
+      printf("Thread Count: %d; ", threadCount);
+      pthread_t threads[threadCount];
+      args.elems = arrLength / threadCount;
+      printf("Each thread will process %d element(s)\n", args.elems);
+      for (int i = 0; i < threadCount; ++i)
+      {
+        args.start = args.elems * i;
+        clock_gettime(CLOCK_MONOTONIC, &begin);
+        int rc = pthread_create(&threads[i], NULL, &doFactCalcOps, (void *)&args);
+        clock_gettime(CLOCK_MONOTONIC, &end);
+        totalTime += (end.tv_sec - begin.tv_sec);
+        totalTime += (end.tv_nsec - begin.tv_nsec) / 1000000000.0;
+      }
+      if (threadCount == 1)
+        singleThreadTime += totalTime;
 
-    // clear attributes
-    pthread_attr_destroy(&attr);
-
-    // kill all threads
-    for (int i = 0; i < threadCount; ++i)
-    {
-      pthread_join(&threads[i], NULL);
+      printf("Total Time Taken For %d thread(s): %f\n", threadCount, totalTime);
+      speedup = singleThreadTime / totalTime;
+      printf("Speedup from 1 to %d thread(s): %f / %f = %f\n", threadCount, singleThreadTime, totalTime, speedup);
+      efficiency = speedup / threadCount;
+      printf("Efficiency from 1 to %d thread(s): %f / %d = %f\n\n", threadCount, speedup, threadCount, efficiency);
+      for (int i = 0; i < threadCount; ++i)
+      {
+        pthread_join(threads[i], NULL);
+      }
     }
   }
+  printf("\n");
   pthread_exit(NULL);
   return 0;
 }
