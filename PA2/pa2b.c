@@ -3,6 +3,62 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <semaphore.h>
+
+int sum = 0;
+pthread_mutex_t mutex;
+sem_t semaphore;
+pthread_rwlock_t lock_rw = PTHREAD_RWLOCK_INITIALIZER;
+
+void *sumNoProtect()
+{
+}
+
+void *sumBusyWait(void *rank)
+{
+}
+
+void *sumMutex()
+{
+}
+
+void *sumSem()
+{
+}
+
+void *sumWRL()
+{
+}
+
+int *fillArr(int totalItems)
+{
+  int *arr = malloc(sizeof(int) * totalItems);
+  for (int i = 0; i < totalItems; ++i)
+  {
+    arr[i] = 1;
+  }
+  return arr;
+}
+
+void doSumNoProtect(bool fileOut, int *ints)
+{
+}
+
+void doSumBusyWait(bool fileOut)
+{
+}
+
+void doSumMutex(bool fileOut)
+{
+}
+
+void doSumSem(bool fileOut)
+{
+}
+
+void doSumWRL(bool fileOut)
+{
+}
 
 void printHelp()
 {
@@ -25,7 +81,8 @@ int main(int argc, char **argv)
     printf("Invalid usage. Use ./pa2b help for details\n");
     return -1;
   }
-  else if (argc == 1)
+
+  if (argc == 1)
   {
     // calculate the performance of doing all security methods
     printf("Here is where we run all methods and print the time to performance2.txt\n");
