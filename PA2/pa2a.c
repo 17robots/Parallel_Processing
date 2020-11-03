@@ -55,25 +55,26 @@ int main()
   printf("Enter Lower Bound\n");
   scanf("%d", &low);
 
-  struct arg_struct args;
-
   for (int arrLength = 1000; arrLength < 16001; arrLength *= 2)
   {
+    int *arr = genArray(arrLength, low, high);
     singleThreadTime = 0;
     fprintf(fp, "\nArray Length: %d\n", arrLength);
-    args.arr = genArray(arrLength, low, high);
     for (int threadCount = 1; threadCount < 17; threadCount *= 2)
     {
       totalTime = 0;
       fprintf(fp, "Thread Count: %d; ", threadCount);
       pthread_t threads[threadCount];
-      args.elems = arrLength / threadCount;
-      fprintf(fp, "Each thread will process %d element(s)\n", args.elems);
+      fprintf(fp, "Each thread will process %d element(s)\n", arrLength / threadCount);
       for (int i = 0; i < threadCount; ++i)
       {
+        struct arg_struct args;
+        args.arr = arr;
         args.start = args.elems * i;
+        args.elems = arrLength / threadCount;
         clock_gettime(CLOCK_MONOTONIC, &begin);
         int rc = pthread_create(&threads[i], NULL, &doFactCalcOps, (void *)&args);
+        pthread_join(threads[i], NULL);
         clock_gettime(CLOCK_MONOTONIC, &end);
         totalTime += (end.tv_sec - begin.tv_sec);
         totalTime += (end.tv_nsec - begin.tv_nsec) / 1000000000.0;
@@ -86,13 +87,9 @@ int main()
       fprintf(fp, "Speedup from 1 to %d thread(s): %f / %f = %f\n", threadCount, singleThreadTime, totalTime, speedup);
       efficiency = speedup / threadCount;
       fprintf(fp, "Efficiency from 1 to %d thread(s): %f / %d = %f\n\n", threadCount, speedup, threadCount, efficiency);
-      for (int i = 0; i < threadCount; ++i)
-      {
-        pthread_join(threads[i], NULL);
-      }
     }
   }
-  printf("\n");
+  fprintf(fp, "\n Not Scalable\n");
   fclose(fp);
   pthread_exit(NULL);
   return 0;

@@ -1,0 +1,661 @@
+Protection Method: No Protection
+
+Array Length: 1000
+Thread Count: 1; Each thread will process 1000 element(s)
+Sum: 1000
+Total Time Taken For 1 thread(s): 0.000075
+Speedup from 1 to 1 thread(s): 0.000075 / 0.000075 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 500 element(s)
+Sum: 1000
+Total Time Taken For 2 thread(s): 0.000088
+Speedup from 1 to 2 thread(s): 0.000075 / 0.000088 = 0.848864
+Efficiency from 1 to 2 thread(s): 0.848864 / 2 = 0.424432
+
+Thread Count: 4; Each thread will process 250 element(s)
+Sum: 1000
+Total Time Taken For 4 thread(s): 0.000160
+Speedup from 1 to 4 thread(s): 0.000075 / 0.000160 = 0.466583
+Efficiency from 1 to 4 thread(s): 0.466583 / 4 = 0.116646
+
+Thread Count: 8; Each thread will process 125 element(s)
+Sum: 1000
+Total Time Taken For 8 thread(s): 0.000308
+Speedup from 1 to 8 thread(s): 0.000075 / 0.000308 = 0.242532
+Efficiency from 1 to 8 thread(s): 0.242532 / 8 = 0.030317
+
+
+Array Length: 2000
+Thread Count: 1; Each thread will process 2000 element(s)
+Sum: 2000
+Total Time Taken For 1 thread(s): 0.000029
+Speedup from 1 to 1 thread(s): 0.000029 / 0.000029 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 1000 element(s)
+Sum: 2000
+Total Time Taken For 2 thread(s): 0.000079
+Speedup from 1 to 2 thread(s): 0.000029 / 0.000079 = 0.366625
+Efficiency from 1 to 2 thread(s): 0.366625 / 2 = 0.183312
+
+Thread Count: 4; Each thread will process 500 element(s)
+Sum: 2000
+Total Time Taken For 4 thread(s): 0.000106
+Speedup from 1 to 4 thread(s): 0.000029 / 0.000106 = 0.273070
+Efficiency from 1 to 4 thread(s): 0.273070 / 4 = 0.068267
+
+Thread Count: 8; Each thread will process 250 element(s)
+Sum: 2000
+Total Time Taken For 8 thread(s): 0.000322
+Speedup from 1 to 8 thread(s): 0.000029 / 0.000322 = 0.090034
+Efficiency from 1 to 8 thread(s): 0.090034 / 8 = 0.011254
+
+
+Array Length: 4000
+Thread Count: 1; Each thread will process 4000 element(s)
+Sum: 4000
+Total Time Taken For 1 thread(s): 0.000028
+Speedup from 1 to 1 thread(s): 0.000028 / 0.000028 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 2000 element(s)
+Sum: 4000
+Total Time Taken For 2 thread(s): 0.000055
+Speedup from 1 to 2 thread(s): 0.000028 / 0.000055 = 0.507326
+Efficiency from 1 to 2 thread(s): 0.507326 / 2 = 0.253663
+
+Thread Count: 4; Each thread will process 1000 element(s)
+Sum: 4000
+Total Time Taken For 4 thread(s): 0.000104
+Speedup from 1 to 4 thread(s): 0.000028 / 0.000104 = 0.266603
+Efficiency from 1 to 4 thread(s): 0.266603 / 4 = 0.066651
+
+Thread Count: 8; Each thread will process 500 element(s)
+Sum: 4000
+Total Time Taken For 8 thread(s): 0.000307
+Speedup from 1 to 8 thread(s): 0.000028 / 0.000307 = 0.090111
+Efficiency from 1 to 8 thread(s): 0.090111 / 8 = 0.011264
+
+
+Array Length: 8000
+Thread Count: 1; Each thread will process 8000 element(s)
+Sum: 8000
+Total Time Taken For 1 thread(s): 0.000029
+Speedup from 1 to 1 thread(s): 0.000029 / 0.000029 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 4000 element(s)
+Sum: 8000
+Total Time Taken For 2 thread(s): 0.000052
+Speedup from 1 to 2 thread(s): 0.000029 / 0.000052 = 0.547710
+Efficiency from 1 to 2 thread(s): 0.547710 / 2 = 0.273855
+
+Thread Count: 4; Each thread will process 2000 element(s)
+Sum: 8000
+Total Time Taken For 4 thread(s): 0.000121
+Speedup from 1 to 4 thread(s): 0.000029 / 0.000121 = 0.238174
+Efficiency from 1 to 4 thread(s): 0.238174 / 4 = 0.059544
+
+Thread Count: 8; Each thread will process 1000 element(s)
+Sum: 8000
+Total Time Taken For 8 thread(s): 0.000304
+Speedup from 1 to 8 thread(s): 0.000029 / 0.000304 = 0.094253
+Efficiency from 1 to 8 thread(s): 0.094253 / 8 = 0.011782
+
+
+Array Length: 16000
+Thread Count: 1; Each thread will process 16000 element(s)
+Sum: 16000
+Total Time Taken For 1 thread(s): 0.000027
+Speedup from 1 to 1 thread(s): 0.000027 / 0.000027 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 8000 element(s)
+Sum: 16000
+Total Time Taken For 2 thread(s): 0.000050
+Speedup from 1 to 2 thread(s): 0.000027 / 0.000050 = 0.540161
+Efficiency from 1 to 2 thread(s): 0.540161 / 2 = 0.270080
+
+Thread Count: 4; Each thread will process 4000 element(s)
+Sum: 16000
+Total Time Taken For 4 thread(s): 0.000126
+Speedup from 1 to 4 thread(s): 0.000027 / 0.000126 = 0.213323
+Efficiency from 1 to 4 thread(s): 0.213323 / 4 = 0.053331
+
+Thread Count: 8; Each thread will process 2000 element(s)
+Sum: 16000
+Total Time Taken For 8 thread(s): 0.000353
+Speedup from 1 to 8 thread(s): 0.000027 / 0.000353 = 0.076182
+Efficiency from 1 to 8 thread(s): 0.076182 / 8 = 0.009523
+
+
+Protection Method: Busy Wait
+
+Array Length: 1000
+Thread Count: 1; Each thread will process 1000 element(s)
+Sum: 1000
+Total Time Taken For 1 thread(s): 0.000068
+Speedup from 1 to 1 thread(s): 0.000068 / 0.000068 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 500 element(s)
+Sum: 1000
+Total Time Taken For 2 thread(s): 0.000064
+Speedup from 1 to 2 thread(s): 0.000068 / 0.000064 = 1.054264
+Efficiency from 1 to 2 thread(s): 1.054264 / 2 = 0.527132
+
+Thread Count: 4; Each thread will process 250 element(s)
+Sum: 1000
+Total Time Taken For 4 thread(s): 0.000125
+Speedup from 1 to 4 thread(s): 0.000068 / 0.000125 = 0.542698
+Efficiency from 1 to 4 thread(s): 0.542698 / 4 = 0.135674
+
+Thread Count: 8; Each thread will process 125 element(s)
+Sum: 1000
+Total Time Taken For 8 thread(s): 0.000387
+Speedup from 1 to 8 thread(s): 0.000068 / 0.000387 = 0.175529
+Efficiency from 1 to 8 thread(s): 0.175529 / 8 = 0.021941
+
+
+Array Length: 2000
+Thread Count: 1; Each thread will process 2000 element(s)
+Sum: 2000
+Total Time Taken For 1 thread(s): 0.000028
+Speedup from 1 to 1 thread(s): 0.000028 / 0.000028 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 1000 element(s)
+Sum: 2000
+Total Time Taken For 2 thread(s): 0.000059
+Speedup from 1 to 2 thread(s): 0.000028 / 0.000059 = 0.477891
+Efficiency from 1 to 2 thread(s): 0.477891 / 2 = 0.238946
+
+Thread Count: 4; Each thread will process 500 element(s)
+Sum: 2000
+Total Time Taken For 4 thread(s): 0.000110
+Speedup from 1 to 4 thread(s): 0.000028 / 0.000110 = 0.255687
+Efficiency from 1 to 4 thread(s): 0.255687 / 4 = 0.063922
+
+Thread Count: 8; Each thread will process 250 element(s)
+Sum: 2000
+Total Time Taken For 8 thread(s): 0.000351
+Speedup from 1 to 8 thread(s): 0.000028 / 0.000351 = 0.080171
+Efficiency from 1 to 8 thread(s): 0.080171 / 8 = 0.010021
+
+
+Array Length: 4000
+Thread Count: 1; Each thread will process 4000 element(s)
+Sum: 4000
+Total Time Taken For 1 thread(s): 0.000029
+Speedup from 1 to 1 thread(s): 0.000029 / 0.000029 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 2000 element(s)
+Sum: 4000
+Total Time Taken For 2 thread(s): 0.000054
+Speedup from 1 to 2 thread(s): 0.000029 / 0.000054 = 0.539450
+Efficiency from 1 to 2 thread(s): 0.539450 / 2 = 0.269725
+
+Thread Count: 4; Each thread will process 1000 element(s)
+Sum: 4000
+Total Time Taken For 4 thread(s): 0.000104
+Speedup from 1 to 4 thread(s): 0.000029 / 0.000104 = 0.281609
+Efficiency from 1 to 4 thread(s): 0.281609 / 4 = 0.070402
+
+Thread Count: 8; Each thread will process 500 element(s)
+Sum: 4000
+Total Time Taken For 8 thread(s): 0.000327
+Speedup from 1 to 8 thread(s): 0.000029 / 0.000327 = 0.089826
+Efficiency from 1 to 8 thread(s): 0.089826 / 8 = 0.011228
+
+
+Array Length: 8000
+Thread Count: 1; Each thread will process 8000 element(s)
+Sum: 8000
+Total Time Taken For 1 thread(s): 0.000027
+Speedup from 1 to 1 thread(s): 0.000027 / 0.000027 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 4000 element(s)
+Sum: 8000
+Total Time Taken For 2 thread(s): 0.000053
+Speedup from 1 to 2 thread(s): 0.000027 / 0.000053 = 0.516068
+Efficiency from 1 to 2 thread(s): 0.516068 / 2 = 0.258034
+
+Thread Count: 4; Each thread will process 2000 element(s)
+Sum: 8000
+Total Time Taken For 4 thread(s): 0.000105
+Speedup from 1 to 4 thread(s): 0.000027 / 0.000105 = 0.260994
+Efficiency from 1 to 4 thread(s): 0.260994 / 4 = 0.065249
+
+Thread Count: 8; Each thread will process 1000 element(s)
+Sum: 8000
+Total Time Taken For 8 thread(s): 0.000318
+Speedup from 1 to 8 thread(s): 0.000027 / 0.000318 = 0.085795
+Efficiency from 1 to 8 thread(s): 0.085795 / 8 = 0.010724
+
+
+Array Length: 16000
+Thread Count: 1; Each thread will process 16000 element(s)
+Sum: 16000
+Total Time Taken For 1 thread(s): 0.000027
+Speedup from 1 to 1 thread(s): 0.000027 / 0.000027 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 8000 element(s)
+Sum: 16000
+Total Time Taken For 2 thread(s): 0.000055
+Speedup from 1 to 2 thread(s): 0.000027 / 0.000055 = 0.496364
+Efficiency from 1 to 2 thread(s): 0.496364 / 2 = 0.248182
+
+Thread Count: 4; Each thread will process 4000 element(s)
+Sum: 16000
+Total Time Taken For 4 thread(s): 0.000104
+Speedup from 1 to 4 thread(s): 0.000027 / 0.000104 = 0.261745
+Efficiency from 1 to 4 thread(s): 0.261745 / 4 = 0.065436
+
+Thread Count: 8; Each thread will process 2000 element(s)
+Sum: 16000
+Total Time Taken For 8 thread(s): 0.000328
+Speedup from 1 to 8 thread(s): 0.000027 / 0.000328 = 0.083333
+Efficiency from 1 to 8 thread(s): 0.083333 / 8 = 0.010417
+
+
+Protection Method: Mutex
+
+Array Length: 1000
+Thread Count: 1; Each thread will process 1000 element(s)
+Sum: 1000
+Total Time Taken For 1 thread(s): 0.000066
+Speedup from 1 to 1 thread(s): 0.000066 / 0.000066 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 500 element(s)
+Sum: 1000
+Total Time Taken For 2 thread(s): 0.000066
+Speedup from 1 to 2 thread(s): 0.000066 / 0.000066 = 1.003035
+Efficiency from 1 to 2 thread(s): 1.003035 / 2 = 0.501517
+
+Thread Count: 4; Each thread will process 250 element(s)
+Sum: 1000
+Total Time Taken For 4 thread(s): 0.000106
+Speedup from 1 to 4 thread(s): 0.000066 / 0.000106 = 0.625355
+Efficiency from 1 to 4 thread(s): 0.625355 / 4 = 0.156339
+
+Thread Count: 8; Each thread will process 125 element(s)
+Sum: 1000
+Total Time Taken For 8 thread(s): 0.000357
+Speedup from 1 to 8 thread(s): 0.000066 / 0.000357 = 0.184947
+Efficiency from 1 to 8 thread(s): 0.184947 / 8 = 0.023118
+
+
+Array Length: 2000
+Thread Count: 1; Each thread will process 2000 element(s)
+Sum: 2000
+Total Time Taken For 1 thread(s): 0.000028
+Speedup from 1 to 1 thread(s): 0.000028 / 0.000028 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 1000 element(s)
+Sum: 2000
+Total Time Taken For 2 thread(s): 0.000057
+Speedup from 1 to 2 thread(s): 0.000028 / 0.000057 = 0.486819
+Efficiency from 1 to 2 thread(s): 0.486819 / 2 = 0.243409
+
+Thread Count: 4; Each thread will process 500 element(s)
+Sum: 2000
+Total Time Taken For 4 thread(s): 0.000105
+Speedup from 1 to 4 thread(s): 0.000028 / 0.000105 = 0.264313
+Efficiency from 1 to 4 thread(s): 0.264313 / 4 = 0.066078
+
+Thread Count: 8; Each thread will process 250 element(s)
+Sum: 2000
+Total Time Taken For 8 thread(s): 0.000315
+Speedup from 1 to 8 thread(s): 0.000028 / 0.000315 = 0.087797
+Efficiency from 1 to 8 thread(s): 0.087797 / 8 = 0.010975
+
+
+Array Length: 4000
+Thread Count: 1; Each thread will process 4000 element(s)
+Sum: 4000
+Total Time Taken For 1 thread(s): 0.000028
+Speedup from 1 to 1 thread(s): 0.000028 / 0.000028 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 2000 element(s)
+Sum: 4000
+Total Time Taken For 2 thread(s): 0.000053
+Speedup from 1 to 2 thread(s): 0.000028 / 0.000053 = 0.520833
+Efficiency from 1 to 2 thread(s): 0.520833 / 2 = 0.260417
+
+Thread Count: 4; Each thread will process 1000 element(s)
+Sum: 4000
+Total Time Taken For 4 thread(s): 0.000101
+Speedup from 1 to 4 thread(s): 0.000028 / 0.000101 = 0.271471
+Efficiency from 1 to 4 thread(s): 0.271471 / 4 = 0.067868
+
+Thread Count: 8; Each thread will process 500 element(s)
+Sum: 4000
+Total Time Taken For 8 thread(s): 0.000321
+Speedup from 1 to 8 thread(s): 0.000028 / 0.000321 = 0.085616
+Efficiency from 1 to 8 thread(s): 0.085616 / 8 = 0.010702
+
+
+Array Length: 8000
+Thread Count: 1; Each thread will process 8000 element(s)
+Sum: 8000
+Total Time Taken For 1 thread(s): 0.000027
+Speedup from 1 to 1 thread(s): 0.000027 / 0.000027 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 4000 element(s)
+Sum: 8000
+Total Time Taken For 2 thread(s): 0.000053
+Speedup from 1 to 2 thread(s): 0.000027 / 0.000053 = 0.505703
+Efficiency from 1 to 2 thread(s): 0.505703 / 2 = 0.252852
+
+Thread Count: 4; Each thread will process 2000 element(s)
+Sum: 8000
+Total Time Taken For 4 thread(s): 0.000102
+Speedup from 1 to 4 thread(s): 0.000027 / 0.000102 = 0.260784
+Efficiency from 1 to 4 thread(s): 0.260784 / 4 = 0.065196
+
+Thread Count: 8; Each thread will process 1000 element(s)
+Sum: 8000
+Total Time Taken For 8 thread(s): 0.000308
+Speedup from 1 to 8 thread(s): 0.000027 / 0.000308 = 0.086476
+Efficiency from 1 to 8 thread(s): 0.086476 / 8 = 0.010809
+
+
+Array Length: 16000
+Thread Count: 1; Each thread will process 16000 element(s)
+Sum: 16000
+Total Time Taken For 1 thread(s): 0.000028
+Speedup from 1 to 1 thread(s): 0.000028 / 0.000028 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 8000 element(s)
+Sum: 16000
+Total Time Taken For 2 thread(s): 0.000052
+Speedup from 1 to 2 thread(s): 0.000028 / 0.000052 = 0.530651
+Efficiency from 1 to 2 thread(s): 0.530651 / 2 = 0.265326
+
+Thread Count: 4; Each thread will process 4000 element(s)
+Sum: 16000
+Total Time Taken For 4 thread(s): 0.000116
+Speedup from 1 to 4 thread(s): 0.000028 / 0.000116 = 0.239619
+Efficiency from 1 to 4 thread(s): 0.239619 / 4 = 0.059905
+
+Thread Count: 8; Each thread will process 2000 element(s)
+Sum: 16000
+Total Time Taken For 8 thread(s): 0.000294
+Speedup from 1 to 8 thread(s): 0.000028 / 0.000294 = 0.094154
+Efficiency from 1 to 8 thread(s): 0.094154 / 8 = 0.011769
+
+
+Protection Method: Semaphore
+
+Array Length: 1000
+Thread Count: 1; Each thread will process 1000 element(s)
+Sum: 1000
+Total Time Taken For 1 thread(s): 0.000074
+Speedup from 1 to 1 thread(s): 0.000074 / 0.000074 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 500 element(s)
+Sum: 1000
+Total Time Taken For 2 thread(s): 0.000115
+Speedup from 1 to 2 thread(s): 0.000074 / 0.000115 = 0.641804
+Efficiency from 1 to 2 thread(s): 0.641804 / 2 = 0.320902
+
+Thread Count: 4; Each thread will process 250 element(s)
+Sum: 1000
+Total Time Taken For 4 thread(s): 0.000131
+Speedup from 1 to 4 thread(s): 0.000074 / 0.000131 = 0.563166
+Efficiency from 1 to 4 thread(s): 0.563166 / 4 = 0.140791
+
+Thread Count: 8; Each thread will process 125 element(s)
+Sum: 1000
+Total Time Taken For 8 thread(s): 0.000351
+Speedup from 1 to 8 thread(s): 0.000074 / 0.000351 = 0.210886
+Efficiency from 1 to 8 thread(s): 0.210886 / 8 = 0.026361
+
+
+Array Length: 2000
+Thread Count: 1; Each thread will process 2000 element(s)
+Sum: 2000
+Total Time Taken For 1 thread(s): 0.000027
+Speedup from 1 to 1 thread(s): 0.000027 / 0.000027 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 1000 element(s)
+Sum: 2000
+Total Time Taken For 2 thread(s): 0.000053
+Speedup from 1 to 2 thread(s): 0.000027 / 0.000053 = 0.514071
+Efficiency from 1 to 2 thread(s): 0.514071 / 2 = 0.257036
+
+Thread Count: 4; Each thread will process 500 element(s)
+Sum: 2000
+Total Time Taken For 4 thread(s): 0.000134
+Speedup from 1 to 4 thread(s): 0.000027 / 0.000134 = 0.204478
+Efficiency from 1 to 4 thread(s): 0.204478 / 4 = 0.051119
+
+Thread Count: 8; Each thread will process 250 element(s)
+Sum: 2000
+Total Time Taken For 8 thread(s): 0.000307
+Speedup from 1 to 8 thread(s): 0.000027 / 0.000307 = 0.089193
+Efficiency from 1 to 8 thread(s): 0.089193 / 8 = 0.011149
+
+
+Array Length: 4000
+Thread Count: 1; Each thread will process 4000 element(s)
+Sum: 4000
+Total Time Taken For 1 thread(s): 0.000027
+Speedup from 1 to 1 thread(s): 0.000027 / 0.000027 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 2000 element(s)
+Sum: 4000
+Total Time Taken For 2 thread(s): 0.000058
+Speedup from 1 to 2 thread(s): 0.000027 / 0.000058 = 0.462995
+Efficiency from 1 to 2 thread(s): 0.462995 / 2 = 0.231497
+
+Thread Count: 4; Each thread will process 1000 element(s)
+Sum: 4000
+Total Time Taken For 4 thread(s): 0.000130
+Speedup from 1 to 4 thread(s): 0.000027 / 0.000130 = 0.207722
+Efficiency from 1 to 4 thread(s): 0.207722 / 4 = 0.051931
+
+Thread Count: 8; Each thread will process 500 element(s)
+Sum: 4000
+Total Time Taken For 8 thread(s): 0.000309
+Speedup from 1 to 8 thread(s): 0.000027 / 0.000309 = 0.087196
+Efficiency from 1 to 8 thread(s): 0.087196 / 8 = 0.010900
+
+
+Array Length: 8000
+Thread Count: 1; Each thread will process 8000 element(s)
+Sum: 8000
+Total Time Taken For 1 thread(s): 0.000027
+Speedup from 1 to 1 thread(s): 0.000027 / 0.000027 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 4000 element(s)
+Sum: 8000
+Total Time Taken For 2 thread(s): 0.000054
+Speedup from 1 to 2 thread(s): 0.000027 / 0.000054 = 0.503704
+Efficiency from 1 to 2 thread(s): 0.503704 / 2 = 0.251852
+
+Thread Count: 4; Each thread will process 2000 element(s)
+Sum: 8000
+Total Time Taken For 4 thread(s): 0.000102
+Speedup from 1 to 4 thread(s): 0.000027 / 0.000102 = 0.266145
+Efficiency from 1 to 4 thread(s): 0.266145 / 4 = 0.066536
+
+Thread Count: 8; Each thread will process 1000 element(s)
+Sum: 8000
+Total Time Taken For 8 thread(s): 0.000323
+Speedup from 1 to 8 thread(s): 0.000027 / 0.000323 = 0.084263
+Efficiency from 1 to 8 thread(s): 0.084263 / 8 = 0.010533
+
+
+Array Length: 16000
+Thread Count: 1; Each thread will process 16000 element(s)
+Sum: 16000
+Total Time Taken For 1 thread(s): 0.000028
+Speedup from 1 to 1 thread(s): 0.000028 / 0.000028 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 8000 element(s)
+Sum: 16000
+Total Time Taken For 2 thread(s): 0.000051
+Speedup from 1 to 2 thread(s): 0.000028 / 0.000051 = 0.541176
+Efficiency from 1 to 2 thread(s): 0.541176 / 2 = 0.270588
+
+Thread Count: 4; Each thread will process 4000 element(s)
+Sum: 16000
+Total Time Taken For 4 thread(s): 0.000102
+Speedup from 1 to 4 thread(s): 0.000028 / 0.000102 = 0.269268
+Efficiency from 1 to 4 thread(s): 0.269268 / 4 = 0.067317
+
+Thread Count: 8; Each thread will process 2000 element(s)
+Sum: 16000
+Total Time Taken For 8 thread(s): 0.000346
+Speedup from 1 to 8 thread(s): 0.000028 / 0.000346 = 0.079815
+Efficiency from 1 to 8 thread(s): 0.079815 / 8 = 0.009977
+
+
+Protection Method: Read/Write Lock
+
+Array Length: 1000
+Thread Count: 1; Each thread will process 1000 element(s)
+Sum: 1000
+Total Time Taken For 1 thread(s): 0.000043
+Speedup from 1 to 1 thread(s): 0.000043 / 0.000043 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 500 element(s)
+Sum: 1000
+Total Time Taken For 2 thread(s): 0.000064
+Speedup from 1 to 2 thread(s): 0.000043 / 0.000064 = 0.678125
+Efficiency from 1 to 2 thread(s): 0.678125 / 2 = 0.339062
+
+Thread Count: 4; Each thread will process 250 element(s)
+Sum: 1000
+Total Time Taken For 4 thread(s): 0.000105
+Speedup from 1 to 4 thread(s): 0.000043 / 0.000105 = 0.411374
+Efficiency from 1 to 4 thread(s): 0.411374 / 4 = 0.102844
+
+Thread Count: 8; Each thread will process 125 element(s)
+Sum: 1000
+Total Time Taken For 8 thread(s): 0.000331
+Speedup from 1 to 8 thread(s): 0.000043 / 0.000331 = 0.130999
+Efficiency from 1 to 8 thread(s): 0.130999 / 8 = 0.016375
+
+
+Array Length: 2000
+Thread Count: 1; Each thread will process 2000 element(s)
+Sum: 2000
+Total Time Taken For 1 thread(s): 0.000028
+Speedup from 1 to 1 thread(s): 0.000028 / 0.000028 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 1000 element(s)
+Sum: 2000
+Total Time Taken For 2 thread(s): 0.000054
+Speedup from 1 to 2 thread(s): 0.000028 / 0.000054 = 0.508257
+Efficiency from 1 to 2 thread(s): 0.508257 / 2 = 0.254128
+
+Thread Count: 4; Each thread will process 500 element(s)
+Sum: 2000
+Total Time Taken For 4 thread(s): 0.000105
+Speedup from 1 to 4 thread(s): 0.000028 / 0.000105 = 0.264313
+Efficiency from 1 to 4 thread(s): 0.264313 / 4 = 0.066078
+
+Thread Count: 8; Each thread will process 250 element(s)
+Sum: 2000
+Total Time Taken For 8 thread(s): 0.000331
+Speedup from 1 to 8 thread(s): 0.000028 / 0.000331 = 0.083560
+Efficiency from 1 to 8 thread(s): 0.083560 / 8 = 0.010445
+
+
+Array Length: 4000
+Thread Count: 1; Each thread will process 4000 element(s)
+Sum: 4000
+Total Time Taken For 1 thread(s): 0.000027
+Speedup from 1 to 1 thread(s): 0.000027 / 0.000027 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 2000 element(s)
+Sum: 4000
+Total Time Taken For 2 thread(s): 0.000053
+Speedup from 1 to 2 thread(s): 0.000027 / 0.000053 = 0.510397
+Efficiency from 1 to 2 thread(s): 0.510397 / 2 = 0.255198
+
+Thread Count: 4; Each thread will process 1000 element(s)
+Sum: 4000
+Total Time Taken For 4 thread(s): 0.000104
+Speedup from 1 to 4 thread(s): 0.000027 / 0.000104 = 0.259865
+Efficiency from 1 to 4 thread(s): 0.259865 / 4 = 0.064966
+
+Thread Count: 8; Each thread will process 500 element(s)
+Sum: 4000
+Total Time Taken For 8 thread(s): 0.000345
+Speedup from 1 to 8 thread(s): 0.000027 / 0.000345 = 0.078216
+Efficiency from 1 to 8 thread(s): 0.078216 / 8 = 0.009777
+
+
+Array Length: 8000
+Thread Count: 1; Each thread will process 8000 element(s)
+Sum: 8000
+Total Time Taken For 1 thread(s): 0.000032
+Speedup from 1 to 1 thread(s): 0.000032 / 0.000032 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 4000 element(s)
+Sum: 8000
+Total Time Taken For 2 thread(s): 0.000056
+Speedup from 1 to 2 thread(s): 0.000032 / 0.000056 = 0.566308
+Efficiency from 1 to 2 thread(s): 0.566308 / 2 = 0.283154
+
+Thread Count: 4; Each thread will process 2000 element(s)
+Sum: 8000
+Total Time Taken For 4 thread(s): 0.000106
+Speedup from 1 to 4 thread(s): 0.000032 / 0.000106 = 0.298959
+Efficiency from 1 to 4 thread(s): 0.298959 / 4 = 0.074740
+
+Thread Count: 8; Each thread will process 1000 element(s)
+Sum: 8000
+Total Time Taken For 8 thread(s): 0.000340
+Speedup from 1 to 8 thread(s): 0.000032 / 0.000340 = 0.092941
+Efficiency from 1 to 8 thread(s): 0.092941 / 8 = 0.011618
+
+
+Array Length: 16000
+Thread Count: 1; Each thread will process 16000 element(s)
+Sum: 16000
+Total Time Taken For 1 thread(s): 0.000029
+Speedup from 1 to 1 thread(s): 0.000029 / 0.000029 = 1.000000
+Efficiency from 1 to 1 thread(s): 1.000000 / 1 = 1.000000
+
+Thread Count: 2; Each thread will process 8000 element(s)
+Sum: 16000
+Total Time Taken For 2 thread(s): 0.000057
+Speedup from 1 to 2 thread(s): 0.000029 / 0.000057 = 0.502627
+Efficiency from 1 to 2 thread(s): 0.502627 / 2 = 0.251313
+
+Thread Count: 4; Each thread will process 4000 element(s)
+Sum: 16000
+Total Time Taken For 4 thread(s): 0.000106
+Speedup from 1 to 4 thread(s): 0.000029 / 0.000106 = 0.271780
+Efficiency from 1 to 4 thread(s): 0.271780 / 4 = 0.067945
+
+Thread Count: 8; Each thread will process 2000 element(s)
+Sum: 16000
+Total Time Taken For 8 thread(s): 0.000313
+Speedup from 1 to 8 thread(s): 0.000029 / 0.000313 = 0.091752
+Efficiency from 1 to 8 thread(s): 0.091752 / 8 = 0.011469
+
+
+Not Scalable
